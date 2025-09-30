@@ -17,9 +17,6 @@ django-cors-headers==4.3.1  # https://github.com/adamchainz/django-cors-headers
 django-filter
 drf-nested-routers
 django-auditlog
-channels>=4.0.0
-channels-redis>=4.1.0
-daphne>=4.0.0
 
 #JWT
 djangorestframework-simplejwt

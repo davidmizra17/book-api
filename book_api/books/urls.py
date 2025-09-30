@@ -1,0 +1,13 @@
+from django.urls import path, include
+from rest_framework import routers
+
+from book_api.books.views.books import BookViewSet
+
+app_name = "books"
+
+router = routers.SimpleRouter()
+router.register(r"", BookViewSet, basename="vehicles")
+
+urlpatterns = [
+    path("", include(router.urls)),
+]
