@@ -2,7 +2,7 @@ services:
   django:
     build:
       context: .
-      dockerfile: ./Dockerfile.yml
+      dockerfile: ./Dockerfile
     image: book_api_django
     container_name: book_api_django
     volumes:
