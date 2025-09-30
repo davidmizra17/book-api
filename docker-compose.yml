@@ -1,0 +1,18 @@
+services:
+  django:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.yml
+    image: book_api_django
+    container_name: book_api_django
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container
+      - ./data:/app/data  # Mount a data directory for SQLite file persistence
+    ports:
+      - '8000:8000'
+    command: python manage.py runserver 0.0.0.0:8000  # Replace with your project name
+    networks:
+      - local_db_network
+networks:
+  local_db_network:
+    driver: bridge
