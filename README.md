@@ -45,12 +45,17 @@ docker compose -f docker-compose.yml up --build
 Once the container is running, you can access the API at:
 
 ```plaintext
-http://localhost:8000/api/
+http://0.0.0.0:8000/api/
 ```
 
 ### API Endpoints
 
 - **GET /api/books/**: Retrieve all books.
+- **GET /api/books/{id}** Retrieve a book by it's ID
+- **POST /api/books/** Create a book
+- **DELETE /api/books/** Delete a book
+- **POST /api/books/{id}/calculate-price/** Calculate the selling price for a book consulting an external api
+- **PUT /api/books/{id}** Update a book
 - **GET /api/books/search?category={category}**: Search for books by category.
 - **GET /api/books/low-stock?threshold=10**: Get books with stock below the specified threshold.
 
@@ -78,13 +83,6 @@ requests
 
 After modifying the requirements, rebuild the Docker container to ensure all dependencies are met.
 
-## Contact
-
-For any questions or issues, please contact [your_email@example.com](mailto:your_email@example.com).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
 
 ### Explanation of Sections
