@@ -1,5 +1,5 @@
 # book-api
-Here’s a sample README file for your Django project that includes instructions for installation via Docker, specifies the Python version, and provides additional information.
+README file for a basic book api for managing inventory.
 
 ```markdown
 # Book API
@@ -20,7 +20,7 @@ Follow these steps to run the application using Docker.
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your_username/book-api.git
+git clone https://github.com/davidmizra17/book-api.git
 cd book-api
 ```
 
