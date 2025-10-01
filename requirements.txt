@@ -20,3 +20,5 @@ django-auditlog
 
 #JWT
 djangorestframework-simplejwt
+
+requests
