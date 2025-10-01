@@ -6,4 +6,4 @@ from book_api.books.models import Book
 class BookModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
-        exclude = ['created_at', 'updated_at']
+        exclude = ['created', 'modified']

@@ -6,7 +6,7 @@ from book_api.books.views.books import BookViewSet
 app_name = "books"
 
 router = routers.SimpleRouter()
-router.register(r"", BookViewSet, basename="vehicles")
+router.register(r"books", BookViewSet, basename="books")
 
 urlpatterns = [
     path("", include(router.urls)),

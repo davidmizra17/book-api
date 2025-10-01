@@ -17,9 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from book_api import books
-
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("book_api.books.urls", namespace="books"))
+    path("api/", include("book_api.books.urls", namespace="books"))
 ]
