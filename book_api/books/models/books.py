@@ -10,3 +10,4 @@ class Book(UUIDModel, TimeStampedModel):
     selling_price_local = models.DecimalField(decimal_places=2, max_digits=8, null=True)
     category = models.CharField(max_length=30)
     supplier_country = models.CharField(max_length=30, null=True)
+    stock_quantity = models.PositiveIntegerField(default=0)
